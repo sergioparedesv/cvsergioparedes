@@ -1,0 +1,1414 @@
+<!DOCTYPE html>
+<html lang="es" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+
+    <title>Sergio Paredes | Desarrollador Full Stack, eLearning & Seguridad con IA</title>
+    <meta name="description" content="Sergio Paredes — Desarrollador Full Stack especializado en eLearning/LMS (Moodle), ciberseguridad SOC e integración de IA (OpenAI, Anthropic, Groq). Java, Spring Boot, PHP, React, Docker.">
+    <meta name="author" content="Sergio Andrés Paredes">
+    <meta name="keywords" content="Sergio Paredes, desarrollador full stack, desarrollador Moodle, LMS, eLearning, ciberseguridad, SOC analyst, Java, Spring Boot, PHP, CodeIgniter, React, inteligencia artificial, Colombia">
+    <meta name="robots" content="index, follow">
+    <meta name="theme-color" content="#c084fc">
+    <link rel="canonical" href="https://sergioparedesv.github.io/cvsergioparedes/">
+    <!-- SEO NOTE: URL de GitHub Pages por defecto para el repo sergioparedesv/cvsergioparedes. Si más adelante configuras un dominio propio (CNAME), actualiza esta etiqueta y las og:url/JSON-LD de abajo. -->
+
+    <!-- Open Graph -->
+    <meta property="og:type" content="profile">
+    <meta property="og:title" content="Sergio Paredes | Desarrollador Full Stack, eLearning & Seguridad con IA">
+    <meta property="og:description" content="Portafolio de Sergio Paredes: desarrollo Full Stack, plataformas eLearning (Moodle/LMS), analista SOC y herramientas de IA aplicada a educación y ciberseguridad.">
+    <meta property="og:url" content="https://sergioparedesv.github.io/cvsergioparedes/">
+    <meta property="og:locale" content="es_CO">
+    <meta property="og:locale:alternate" content="en_US">
+    <meta property="profile:first_name" content="Sergio">
+    <meta property="profile:last_name" content="Paredes">
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Sergio Paredes | Desarrollador Full Stack, eLearning & Seguridad con IA">
+    <meta name="twitter:description" content="Desarrollo Full Stack, plataformas eLearning (Moodle/LMS), analista SOC y herramientas de IA aplicada a educación y ciberseguridad.">
+
+    <!-- Favicon (monograma SP, sin archivo binario) -->
+    <link rel="icon" type="image/svg+xml" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%23c084fc'/%3E%3Cstop offset='1' stop-color='%2367e8f9'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='100' height='100' rx='20' fill='url(%23g)'/%3E%3Ctext x='50' y='64' font-family='monospace' font-size='42' font-weight='700' fill='white' text-anchor='middle'%3ESP%3C/text%3E%3C/svg%3E">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@300;400;500;700;800;900&family=Fira+Code:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="style.css">
+
+    <!-- JSON-LD structured data -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Person",
+      "name": "Sergio Andrés Paredes",
+      "alternateName": "Sergio Paredes",
+      "jobTitle": "Full Stack Developer · eLearning & LMS · SOC / IA Security",
+      "url": "https://sergioparedesv.github.io/cvsergioparedes/",
+      "email": "mailto:sergioparedesv@gmail.com",
+      "telephone": "+57-318-431-0252",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Girón",
+        "addressRegion": "Santander",
+        "addressCountry": "CO"
+      },
+      "sameAs": [
+        "https://github.com/sergioparedesv/",
+        "https://www.linkedin.com/in/sergio-paredes-444534129/",
+        "https://www.youtube.com/channel/UCo0bIjLfBJSlatvTqJkiZEQ"
+      ],
+      "knowsAbout": ["Java", "Spring Boot", "PHP", "JavaScript", "TypeScript", "Python", "Moodle", "WordPress", "Docker", "Ciberseguridad", "SOC", "Inteligencia Artificial", "eLearning", "React", "Chrome Extensions"]
+    }
+    </script>
+
+    <!-- MIT License notice for the base template (CodePen "Professional Developer Portfolio" by Kan3an / Mohammad Abu Sakour) -->
+    <!--
+    MIT License
+    Copyright (c) Mohammad Abu Sakour (Kan3an) — https://codepen.io/Kan3an/pen/qEZzbom
+    Permission is hereby granted, free of charge, to use, copy, modify, merge, publish,
+    distribute, sublicense, and/or sell copies of the Software, subject to including
+    this copyright notice in all copies or substantial portions of the Software.
+    -->
+</head>
+<body class="body-main" data-theme="dark" data-lang="es" data-dir="ltr">
+
+    <!-- Loading Screen -->
+    <div class="loader-screen" id="loader">
+        <div class="loader-content">
+            <div class="loader-code-text">
+                <div class="code-line" data-line="1">const portfolio = {</div>
+                <div class="code-line" data-line="2">  developer: 'Sergio Paredes',</div>
+                <div class="code-line" data-line="3">  status: 'cargando...'</div>
+                <div class="code-line" data-line="4">};</div>
+            </div>
+            <div class="loader-spinner-wrapper">
+                <div class="loader-spinner"></div>
+            </div>
+            <div class="loader-progress-wrapper">
+                <div class="loader-progress-bar"></div>
+            </div>
+            <div class="loader-percentage" id="loaderPercent">0%</div>
+        </div>
+    </div>
+
+    <!-- Navigation Header -->
+    <header class="main-header" id="header">
+        <nav class="nav-container">
+            <div class="nav-brand">
+                <div class="brand-logo">
+                    <span class="logo-bracket">&lt;</span>
+                    <span class="logo-text">SP</span>
+                    <span class="logo-bracket">/&gt;</span>
+                </div>
+            </div>
+
+            <div class="nav-menu" id="navMenu">
+                <a href="#home" class="nav-link active" data-section="home">
+                    <i class="fas fa-home"></i>
+                    <span class="nav-text" data-text-es="Inicio" data-text-en="Home">Inicio</span>
+                </a>
+                <a href="#about" class="nav-link" data-section="about">
+                    <i class="fas fa-user"></i>
+                    <span class="nav-text" data-text-es="Sobre mí" data-text-en="About">Sobre mí</span>
+                </a>
+                <a href="#skills" class="nav-link" data-section="skills">
+                    <i class="fas fa-code"></i>
+                    <span class="nav-text" data-text-es="Habilidades" data-text-en="Skills">Habilidades</span>
+                </a>
+                <a href="#experience" class="nav-link" data-section="experience">
+                    <i class="fas fa-briefcase"></i>
+                    <span class="nav-text" data-text-es="Experiencia" data-text-en="Experience">Experiencia</span>
+                </a>
+                <a href="#projects" class="nav-link" data-section="projects">
+                    <i class="fas fa-rocket"></i>
+                    <span class="nav-text" data-text-es="Proyectos" data-text-en="Projects">Proyectos</span>
+                </a>
+                <a href="#certifications" class="nav-link" data-section="certifications">
+                    <i class="fas fa-certificate"></i>
+                    <span class="nav-text" data-text-es="Certificaciones" data-text-en="Certifications">Certificaciones</span>
+                </a>
+                <a href="#contact" class="nav-link" data-section="contact">
+                    <i class="fas fa-envelope"></i>
+                    <span class="nav-text" data-text-es="Contacto" data-text-en="Contact">Contacto</span>
+                </a>
+            </div>
+
+            <div class="nav-controls">
+                <button class="lang-toggle" id="langToggle" title="Toggle Language">
+                    <i class="fas fa-language"></i>
+                    <span class="lang-text">EN</span>
+                </button>
+                <button class="theme-toggle" id="themeToggle" title="Toggle Theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button class="menu-toggle" id="menuToggle" title="Toggle Menu">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Main Content -->
+    <main class="main-content">
+
+        <!-- Hero Section -->
+        <section id="home" class="hero-section">
+            <div class="hero-background">
+                <div class="code-grid-bg"></div>
+                <div class="floating-particles" id="particles"></div>
+            </div>
+
+            <div class="hero-container">
+                <div class="hero-content">
+                    <div class="hero-greeting">
+                        <span class="greeting-text" data-text-es="Hola, soy" data-text-en="Hello, I'm">Hola, soy</span>
+                        <span class="greeting-cursor">|</span>
+                    </div>
+
+                    <h1 class="hero-name" id="heroName">
+                        <span class="name-prefix">const developer</span>
+                        <span class="name-operator">=</span>
+                        <span class="name-value">Sergio Paredes</span>
+                        <span class="name-suffix">;</span>
+                    </h1>
+
+                    <div class="hero-title">
+                        <span class="title-prefix">//</span>
+                        <span class="title-text" data-text-es="Full Stack Developer · eLearning & LMS · SOC / Seguridad con IA" data-text-en="Full Stack Developer · eLearning & LMS · SOC / AI Security">Full Stack Developer · eLearning & LMS · SOC / Seguridad con IA</span>
+                    </div>
+
+                    <p class="hero-description" data-text-es="Profesional con experiencia en el diseño y desarrollo de soluciones tecnológicas, especializado en eLearning, desarrollo frontend/backend y ciberseguridad. Implemento herramientas de inteligencia artificial (OpenAI, Anthropic, Groq) para optimizar procesos educativos y de seguridad." data-text-en="Professional experienced in designing and building technology solutions, specialized in eLearning, front/back-end development and cybersecurity. I apply AI tools (OpenAI, Anthropic, Groq) to optimize educational and security processes.">
+                        Profesional con experiencia en el diseño y desarrollo de soluciones tecnológicas, especializado en eLearning, desarrollo frontend/backend y ciberseguridad. Implemento herramientas de inteligencia artificial (OpenAI, Anthropic, Groq) para optimizar procesos educativos y de seguridad.
+                    </p>
+
+                    <div class="hero-buttons">
+                        <a href="#contact" class="btn btn-primary">
+                            <span data-text-es="Contáctame" data-text-en="Get In Touch">Contáctame</span>
+                            <i class="fas fa-arrow-right"></i>
+                        </a>
+                        <a href="#projects" class="btn btn-secondary">
+                            <span data-text-es="Ver Proyectos" data-text-en="View Projects">Ver Proyectos</span>
+                            <i class="fas fa-code"></i>
+                        </a>
+                    </div>
+
+                    <div class="hero-social">
+                        <a href="https://github.com/sergioparedesv/" target="_blank" rel="noopener noreferrer" class="social-icon" title="GitHub">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/sergio-paredes-444534129/" target="_blank" rel="noopener noreferrer" class="social-icon" title="LinkedIn">
+                            <i class="fab fa-linkedin-in"></i>
+                        </a>
+                        <a href="https://wa.me/573184310252" target="_blank" rel="noopener noreferrer" class="social-icon" title="WhatsApp">
+                            <i class="fab fa-whatsapp"></i>
+                        </a>
+                        <a href="https://www.youtube.com/channel/UCo0bIjLfBJSlatvTqJkiZEQ" target="_blank" rel="noopener noreferrer" class="social-icon" title="YouTube">
+                            <i class="fab fa-youtube"></i>
+                        </a>
+                        <a href="mailto:sergioparedesv@gmail.com" class="social-icon" title="Email">
+                            <i class="fas fa-envelope"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="hero-image-wrapper">
+                    <div class="hero-image-container">
+                        <div class="profile-image-glow"></div>
+                        <div class="profile-image-frame">
+                            <div class="profile-image" id="profileImage">
+                                <div class="profile-placeholder">
+                                    <i class="fas fa-code"></i>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-1">
+                            <i class="fas fa-server"></i>
+                            <div class="badge-content">
+                                <span class="badge-title">Spring Boot</span>
+                                <span class="badge-libs">Java, JPA, REST APIs</span>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-2">
+                            <i class="fas fa-graduation-cap"></i>
+                            <div class="badge-content">
+                                <span class="badge-title">Moodle & LMS</span>
+                                <span class="badge-libs">eLearning, Docker, Azure</span>
+                            </div>
+                        </div>
+                        <div class="floating-badge badge-3">
+                            <i class="fas fa-robot"></i>
+                            <div class="badge-content">
+                                <span class="badge-title">IA & Seguridad</span>
+                                <span class="badge-libs">OpenAI, Anthropic, Groq</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="scroll-indicator">
+                <div class="scroll-mouse">
+                    <div class="scroll-wheel"></div>
+                </div>
+                <span class="scroll-text" data-text-es="Desplázate" data-text-en="Scroll Down">Desplázate</span>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="section about-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">01</span>
+                    <h2 class="section-title">
+                        <span class="title-bracket">&lt;</span>
+                        <span class="title-text" data-text-es="Sobre mí" data-text-en="About Me">Sobre mí</span>
+                        <span class="title-bracket">/&gt;</span>
+                    </h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="about-content">
+                    <div class="about-text-wrapper">
+                        <div class="about-intro">
+                            <p class="about-text" data-text-es="Especializado en eLearning, desarrollo frontend/backend y extensiones de navegador, implemento herramientas de inteligencia artificial (OpenAI, Anthropic, Groq) para optimizar procesos educativos y de seguridad. Cuento con sólidos conocimientos en Java, PHP, Python, JavaScript y TypeScript, dominio de HTML5, CSS3 y XML, experiencia en metodologías ágiles, contenedores Docker y terminal Linux. Experto en LMS y CMS (Moodle y WordPress/Elementor), combino habilidades técnicas y creativas para crear experiencias educativas y funcionales." data-text-en="Specialized in eLearning, front/back-end development and browser extensions, I apply AI tools (OpenAI, Anthropic, Groq) to optimize educational and security processes. I have solid knowledge of Java, PHP, Python, JavaScript and TypeScript, command of HTML5, CSS3 and XML, experience with agile methodologies, Docker containers and the Linux terminal. Expert in LMS and CMS (Moodle and WordPress/Elementor), I combine technical and creative skills to build functional educational experiences.">
+                                Especializado en eLearning, desarrollo frontend/backend y extensiones de navegador, implemento herramientas de inteligencia artificial (OpenAI, Anthropic, Groq) para optimizar procesos educativos y de seguridad. Cuento con sólidos conocimientos en Java, PHP, Python, JavaScript y TypeScript, dominio de HTML5, CSS3 y XML, experiencia en metodologías ágiles, contenedores Docker y terminal Linux. Experto en LMS y CMS (Moodle y WordPress/Elementor), combino habilidades técnicas y creativas para crear experiencias educativas y funcionales.
+                            </p>
+                        </div>
+
+                        <div class="about-stats">
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="11">0</div>
+                                <div class="stat-label" data-text-es="Proyectos" data-text-en="Projects">Proyectos</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="7">0</div>
+                                <div class="stat-label" data-text-es="Años de experiencia" data-text-en="Years Experience">Años de experiencia</div>
+                            </div>
+                            <div class="stat-item">
+                                <div class="stat-number" data-count="66">0</div>
+                                <div class="stat-label" data-text-es="Certificaciones" data-text-en="Certifications">Certificaciones</div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="about-image-wrapper">
+                        <div class="about-image-container">
+                            <div class="code-block">
+                                <div class="code-line">
+                                    <span class="code-keyword">const</span>
+                                    <span class="code-variable">developer</span>
+                                    <span class="code-operator">=</span>
+                                    <span class="code-brace">{</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">name</span>
+                                    <span class="code-operator">:</span>
+                                    <span class="code-string">'Sergio Paredes'</span>
+                                    <span class="code-comma">,</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">role</span>
+                                    <span class="code-operator">:</span>
+                                    <span class="code-string">'Full Stack & eLearning'</span>
+                                    <span class="code-comma">,</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">stack</span>
+                                    <span class="code-operator">:</span>
+                                    <span class="code-bracket">[</span>
+                                    <span class="code-string">'Java'</span>
+                                    <span class="code-comma">,</span>
+                                    <span class="code-string">'Spring Boot'</span>
+                                    <span class="code-comma">,</span>
+                                    <span class="code-string">'PHP'</span>
+                                    <span class="code-comma">,</span>
+                                    <span class="code-string">'Moodle'</span>
+                                    <span class="code-bracket">]</span>
+                                    <span class="code-comma">,</span>
+                                </div>
+                                <div class="code-line indent">
+                                    <span class="code-property">focus</span>
+                                    <span class="code-operator">:</span>
+                                    <span class="code-string">'AI & Security'</span>
+                                </div>
+                                <div class="code-line">
+                                    <span class="code-brace">}</span>
+                                    <span class="code-semicolon">;</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="section skills-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">02</span>
+                    <h2 class="section-title">
+                        <span class="title-bracket">&lt;</span>
+                        <span class="title-text" data-text-es="Habilidades" data-text-en="Skills">Habilidades</span>
+                        <span class="title-bracket">/&gt;</span>
+                    </h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <h3 class="category-title" data-text-es="Lenguajes & Frontend" data-text-en="Languages & Frontend">Lenguajes & Frontend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="Java" data-percent="90">
+                                <div class="skill-header"><span class="skill-name">Java</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="JavaScript/TypeScript" data-percent="85">
+                                <div class="skill-header"><span class="skill-name">JavaScript / TypeScript</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="PHP" data-percent="88">
+                                <div class="skill-header"><span class="skill-name">PHP</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="Python" data-percent="78">
+                                <div class="skill-header"><span class="skill-name">Python</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="HTML5/CSS3" data-percent="92">
+                                <div class="skill-header"><span class="skill-name">HTML5 & CSS3</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title" data-text-es="Frameworks & Backend" data-text-en="Frameworks & Backend">Frameworks & Backend</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="Spring Boot" data-percent="85">
+                                <div class="skill-header"><span class="skill-name">Spring Boot</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="CodeIgniter" data-percent="90">
+                                <div class="skill-header"><span class="skill-name">CodeIgniter</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="Laravel" data-percent="75">
+                                <div class="skill-header"><span class="skill-name">Laravel</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="Django/FastAPI" data-percent="70">
+                                <div class="skill-header"><span class="skill-name">Django / FastAPI</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="React/Angular-Ionic" data-percent="78">
+                                <div class="skill-header"><span class="skill-name">React / Angular & Ionic</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <h3 class="category-title" data-text-es="eLearning, DevOps & IA" data-text-en="eLearning, DevOps & AI">eLearning, DevOps & IA</h3>
+                        <div class="skill-items">
+                            <div class="skill-item" data-skill="Moodle/WordPress" data-percent="95">
+                                <div class="skill-header"><span class="skill-name">Moodle & WordPress</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="Git/GitHub" data-percent="90">
+                                <div class="skill-header"><span class="skill-name">Git & GitHub</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="Docker/Linux" data-percent="80">
+                                <div class="skill-header"><span class="skill-name">Docker & Linux</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="OpenAI/Anthropic/Groq" data-percent="88">
+                                <div class="skill-header"><span class="skill-name">OpenAI / Anthropic / Groq</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                            <div class="skill-item" data-skill="Chrome Extensions" data-percent="82">
+                                <div class="skill-header"><span class="skill-name">Chrome Extensions (Manifest V3)</span><span class="skill-percent">0%</span></div>
+                                <div class="skill-bar"><div class="skill-progress"></div></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Experience Section -->
+        <section id="experience" class="section experience-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">03</span>
+                    <h2 class="section-title">
+                        <span class="title-bracket">&lt;</span>
+                        <span class="title-text" data-text-es="Experiencia" data-text-en="Experience">Experiencia</span>
+                        <span class="title-bracket">/&gt;</span>
+                    </h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-year">Feb 2024 — <span data-text-es="Actualidad" data-text-en="Present">Actualidad</span></div>
+                                <div class="timeline-badge" data-text-es="Actual" data-text-en="Current">Actual</div>
+                            </div>
+                            <h3 class="timeline-title" data-text-es="Analista SOC L1" data-text-en="SOC L1 Analyst">Analista SOC L1</h3>
+                            <div class="timeline-company"><i class="fas fa-building"></i> Password Consulting Services SAS</div>
+                            <p class="timeline-description" data-text-es="Analista SOC L1 con enfoque en desarrollo de herramientas de análisis de amenazas e inteligencia artificial para el equipo SOC, aplicando ciencia de datos en hojas de cálculo para automatizar procesos." data-text-en="SOC L1 analyst focused on building threat-analysis and AI tooling for the SOC team, applying data science in spreadsheets to automate processes.">
+                                Analista SOC L1 con enfoque en desarrollo de herramientas de análisis de amenazas e inteligencia artificial para el equipo SOC, aplicando ciencia de datos en hojas de cálculo para automatizar procesos.
+                            </p>
+                            <div class="timeline-achievements">
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Desarrollo de SocFree: agregador de inteligencia de amenazas e IA para triage SOC L1" data-text-en="Built SocFree: threat-intel + AI aggregator for SOC L1 triage">Desarrollo de SocFree: agregador de inteligencia de amenazas e IA para triage SOC L1</span></div>
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Creación de SOCopilot: extensión Chrome que analiza IOCs sobre la consola del SIEM" data-text-en="Built SOCopilot: Chrome extension analyzing IOCs on top of the SIEM console">Creación de SOCopilot: extensión Chrome que analiza IOCs sobre la consola del SIEM</span></div>
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Automatización de procesos del equipo SOC con ciencia de datos" data-text-en="Automated SOC team processes with data science">Automatización de procesos del equipo SOC con ciencia de datos</span></div>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tag">SOC L1</span><span class="tag">Threat Intelligence</span><span class="tag">Chrome Extensions</span><span class="tag">IA</span><span class="tag">Python</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-year">Ago 2023 — <span data-text-es="Actualidad" data-text-en="Present">Actualidad</span></div>
+                                <div class="timeline-badge" data-text-es="Actual" data-text-en="Current">Actual</div>
+                            </div>
+                            <h3 class="timeline-title" data-text-es="Desarrollador Moodle" data-text-en="Moodle Developer">Desarrollador Moodle</h3>
+                            <div class="timeline-company"><i class="fas fa-building"></i> AMVA Elearning — Área Metropolitana del Valle de Aburrá</div>
+                            <p class="timeline-description" data-text-es="Desarrollador Backend y Frontend orientado a LMS y CMS: módulos, actualizaciones y reparaciones de plataformas educativas institucionales." data-text-en="Backend and Frontend developer focused on LMS/CMS: modules, upgrades and fixes for institutional learning platforms.">
+                                Desarrollador Backend y Frontend orientado a LMS y CMS: módulos, actualizaciones y reparaciones de plataformas educativas institucionales.
+                            </p>
+                            <div class="timeline-achievements">
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Investigación forense y recuperación tras pérdida del repositorio moodledata de Educa Metropol" data-text-en="Forensic investigation and recovery after Educa Metropol's moodledata loss">Investigación forense y recuperación tras pérdida del repositorio moodledata de Educa Metropol</span></div>
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Actualización de Moodle 3.8 → 5.2 en contenedores Docker y migración a Azure" data-text-en="Upgraded Moodle 3.8 → 5.2 on Docker containers and migrated to Azure">Actualización de Moodle 3.8 → 5.2 en contenedores Docker y migración a Azure</span></div>
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Rediseño del frontend institucional y reconstrucción de cursos" data-text-en="Redesigned the institutional frontend and rebuilt courses">Rediseño del frontend institucional y reconstrucción de cursos</span></div>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tag">Moodle</span><span class="tag">Docker</span><span class="tag">Azure</span><span class="tag">PHP</span><span class="tag">LMS</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-year">Dic 2022 — <span data-text-es="Actualidad" data-text-en="Present">Actualidad</span></div>
+                                <div class="timeline-badge" data-text-es="Actual" data-text-en="Current">Actual</div>
+                            </div>
+                            <h3 class="timeline-title" data-text-es="Experto en Desarrollo Instruccional" data-text-en="Instructional Design Expert">Experto en Desarrollo Instruccional</h3>
+                            <div class="timeline-company"><i class="fas fa-building"></i> ASYS Instituto Educativo</div>
+                            <p class="timeline-description" data-text-es="Desarrollo de cursos de Inteligencia Artificial Generativa aplicados a medicina y educación, y mantenimiento de plataformas educativas." data-text-en="Development of Generative AI courses applied to medicine and education, plus maintenance of learning platforms.">
+                                Desarrollo de cursos de Inteligencia Artificial Generativa aplicados a medicina y educación, y mantenimiento de plataformas educativas.
+                            </p>
+                            <div class="timeline-achievements">
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Cursos de IA Generativa para docentes y estudiantes (Univirtual Asys)" data-text-en="Generative AI courses for teachers and students (Univirtual Asys)">Cursos de IA Generativa para docentes y estudiantes (Univirtual Asys)</span></div>
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Curso de IA Generativa para Médicos en Campus Maesstria" data-text-en="Generative AI course for physicians at Campus Maesstria">Curso de IA Generativa para Médicos en Campus Maesstria</span></div>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tag">Diseño Instruccional</span><span class="tag">IA Generativa</span><span class="tag">eLearning</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-year">Jun 2023 — Dic 2023</div>
+                            </div>
+                            <h3 class="timeline-title" data-text-es="Desarrollador Frontend" data-text-en="Frontend Developer">Desarrollador Frontend</h3>
+                            <div class="timeline-company"><i class="fas fa-building"></i> DTL360</div>
+                            <p class="timeline-description" data-text-es="Implementación del sitio web UPIT, aseguramiento y hardening OWASP, diseño de guiones instruccionales y manuales de capacitación." data-text-en="Implemented the UPIT website, OWASP hardening, and authored instructional scripts and training manuals.">
+                                Implementación del sitio web UPIT, aseguramiento y hardening OWASP, diseño de guiones instruccionales y manuales de capacitación.
+                            </p>
+                            <div class="timeline-achievements">
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Hardening del sitio siguiendo lineamientos OWASP" data-text-en="Hardened the site following OWASP guidelines">Hardening del sitio siguiendo lineamientos OWASP</span></div>
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Manuales de capacitación y guiones instruccionales" data-text-en="Training manuals and instructional scripts">Manuales de capacitación y guiones instruccionales</span></div>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tag">Frontend</span><span class="tag">OWASP</span><span class="tag">Hardening</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-year">Mar 2020 — Oct 2021</div>
+                            </div>
+                            <h3 class="timeline-title" data-text-es="Desarrollador Front-end" data-text-en="Front-end Developer">Desarrollador Front-end</h3>
+                            <div class="timeline-company"><i class="fas fa-building"></i> Fundación Escuela</div>
+                            <p class="timeline-description" data-text-es="Despliegue de plataformas E-learning (Moodle), creación de material Elearning y desarrollo de herramientas de soporte para auditoría y consultoría." data-text-en="Deployed E-learning (Moodle) platforms, produced Elearning material and built support tools for audit and consulting.">
+                                Despliegue de plataformas E-learning (Moodle), creación de material Elearning y desarrollo de herramientas de soporte para auditoría y consultoría.
+                            </p>
+                            <div class="timeline-achievements">
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Despliegue y mantenimiento de plataformas Moodle" data-text-en="Deployed and maintained Moodle platforms">Despliegue y mantenimiento de plataformas Moodle</span></div>
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Formularios y herramientas de soporte para auditoría" data-text-en="Forms and support tools for audits">Formularios y herramientas de soporte para auditoría</span></div>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tag">Moodle</span><span class="tag">Frontend</span><span class="tag">Auditoría</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="timeline-item">
+                        <div class="timeline-marker"></div>
+                        <div class="timeline-content">
+                            <div class="timeline-header">
+                                <div class="timeline-year">Feb 2019 — Dic 2019</div>
+                            </div>
+                            <h3 class="timeline-title" data-text-es="Desarrollador" data-text-en="Developer">Desarrollador</h3>
+                            <div class="timeline-company"><i class="fas fa-building"></i> IAciberseguridad</div>
+                            <p class="timeline-description" data-text-es="Desarrollo de herramientas, formularios y soporte en proyectos de auditoría y consultoría; despliegue de plataformas E-learning (Moodle) para la Procuraduría General de la Nación." data-text-en="Built tools and forms and supported audit/consulting projects; deployed E-learning (Moodle) platforms for the Attorney General's Office.">
+                                Desarrollo de herramientas, formularios y soporte en proyectos de auditoría y consultoría; despliegue de plataformas E-learning (Moodle) para la Procuraduría General de la Nación.
+                            </p>
+                            <div class="timeline-achievements">
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Plataforma Moodle para el programa de SGSI de la Procuraduría" data-text-en="Moodle platform for the Attorney General's ISMS program">Plataforma Moodle para el programa de SGSI de la Procuraduría</span></div>
+                                <div class="achievement-item"><i class="fas fa-check-circle"></i><span data-text-es="Desarrollo de juegos y módulos educativos en Angular" data-text-en="Built educational games and modules in Angular">Desarrollo de juegos y módulos educativos en Angular</span></div>
+                            </div>
+                            <div class="timeline-tags">
+                                <span class="tag">Moodle</span><span class="tag">Angular</span><span class="tag">SGSI</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="section projects-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">04</span>
+                    <h2 class="section-title">
+                        <span class="title-bracket">&lt;</span>
+                        <span class="title-text" data-text-es="Proyectos" data-text-en="Projects">Proyectos</span>
+                        <span class="title-bracket">/&gt;</span>
+                    </h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="projects-grid">
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="http://educa.metropol.gov.co/" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver sitio">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder"><i class="fas fa-server"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Educa Metropol</h3>
+                            <p class="project-description" data-text-es="Investigación forense y recuperación de la plataforma educativa institucional. Actualización de Moodle 3.8 a 5.2 en Docker, rediseño de frontend y migración a Azure." data-text-en="Forensic investigation and recovery of the institutional learning platform. Upgraded Moodle 3.8 to 5.2 on Docker, redesigned the frontend and migrated to Azure.">
+                                Investigación forense y recuperación de la plataforma educativa institucional. Actualización de Moodle 3.8 a 5.2 en Docker, rediseño de frontend y migración a Azure.
+                            </p>
+                            <div class="project-tags"><span class="tag">Moodle</span><span class="tag">Docker</span><span class="tag">Azure</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://bootcamp.iaciberseguridad.com/" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver sitio">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder"><i class="fas fa-shield-halved"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Bootcamp LMS — IAciberseguridad</h3>
+                            <p class="project-description" data-text-es="LMS construido desde cero para formar analistas SOC: lecciones interactivas, tutor con IA y calificación semántica de respuestas abiertas. Catálogo CEH v13, ISO/IEC 42001 y Prompt Engineering para SOC." data-text-en="LMS built from scratch to train SOC analysts: interactive lessons, an AI tutor and semantic grading of open answers. Catalog covers CEH v13, ISO/IEC 42001 and Prompt Engineering for SOC.">
+                                LMS construido desde cero para formar analistas SOC: lecciones interactivas, tutor con IA y calificación semántica de respuestas abiertas. Catálogo CEH v13, ISO/IEC 42001 y Prompt Engineering para SOC.
+                            </p>
+                            <div class="project-tags"><span class="tag">CodeIgniter</span><span class="tag">Groq</span><span class="tag">GSAP</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://socfree.iaciberseguridad.com/" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver sitio">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder"><i class="fas fa-magnifying-glass-chart"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">SocFree</h3>
+                            <p class="project-description" data-text-es="Herramienta de apoyo para analistas SOC L1 que integra múltiples fuentes de inteligencia de amenazas e IA para analizar hashes, IPs, dominios y logs." data-text-en="Support tool for SOC L1 analysts integrating multiple threat-intel and AI sources to analyze hashes, IPs, domains and logs.">
+                                Herramienta de apoyo para analistas SOC L1 que integra múltiples fuentes de inteligencia de amenazas e IA para analizar hashes, IPs, dominios y logs.
+                            </p>
+                            <div class="project-tags"><span class="tag">CodeIgniter</span><span class="tag">PHP</span><span class="tag">Threat Intel</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="http://simuladorsiem.iaciberseguridad.com/" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver sitio">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder"><i class="fas fa-display"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Simulador SIEM — IAciberseguridad</h3>
+                            <p class="project-description" data-text-es="Entorno de simulación de un SIEM para el entrenamiento práctico de analistas SOC dentro del bootcamp de ciberseguridad." data-text-en="Simulated SIEM environment for hands-on SOC analyst training within the cybersecurity bootcamp.">
+                                Entorno de simulación de un SIEM para el entrenamiento práctico de analistas SOC dentro del bootcamp de ciberseguridad.
+                            </p>
+                            <div class="project-tags"><span class="tag">CodeIgniter</span><span class="tag">SIEM</span><span class="tag">Training</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="img/socopilot.png" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver captura">
+                                        <i class="fas fa-image"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder"><i class="fas fa-puzzle-piece"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">SOCopilot</h3>
+                            <p class="project-description" data-text-es="Extensión de Chrome que asiste a analistas SOC L1 directamente sobre la consola del SIEM, extrayendo IOCs y consultándolos automáticamente con IA." data-text-en="Chrome extension assisting SOC L1 analysts directly on the SIEM console, extracting IOCs and querying them automatically with AI.">
+                                Extensión de Chrome que asiste a analistas SOC L1 directamente sobre la consola del SIEM, extrayendo IOCs y consultándolos automáticamente con IA.
+                            </p>
+                            <div class="project-tags"><span class="tag">React</span><span class="tag">Manifest V3</span><span class="tag">OpenAI</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://upit.gov.co/" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver sitio">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder"><i class="fas fa-globe"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Sitio Web UPIT</h3>
+                            <p class="project-description" data-text-es="Implementación del sitio web institucional UPIT, aseguramiento y hardening siguiendo lineamientos OWASP." data-text-en="Implemented the UPIT institutional website, with security hardening following OWASP guidelines.">
+                                Implementación del sitio web institucional UPIT, aseguramiento y hardening siguiendo lineamientos OWASP.
+                            </p>
+                            <div class="project-tags"><span class="tag">WordPress</span><span class="tag">OWASP</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-overlay">
+                                <div class="project-links">
+                                    <a href="https://academia.clubdeespecialistas.com.co/" target="_blank" rel="noopener noreferrer" class="project-link" title="Ver sitio">
+                                        <i class="fas fa-external-link-alt"></i>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="project-placeholder"><i class="fas fa-screwdriver-wrench"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Academia Club de Especialistas</h3>
+                            <p class="project-description" data-text-es="Plataforma del club de especialistas constructor con 2 cursos que busca formar a más de 2.000 personas en actividades de construcción y reparación de motores." data-text-en="Builder specialists club platform with 2 courses aiming to train over 2,000 people in construction and engine-repair activities.">
+                                Plataforma del club de especialistas constructor con 2 cursos que busca formar a más de 2.000 personas en actividades de construcción y reparación de motores.
+                            </p>
+                            <div class="project-tags"><span class="tag">Moodle</span><span class="tag">Diseño Instruccional</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i class="fas fa-hammer"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">Academia Constructor Homecenter</h3>
+                            <p class="project-description" data-text-es="Plataforma del club de especialistas constructor con más de 16 cursos, formando a más de 20.000 personas en construcción y reparación de productos." data-text-en="Platform for the builder specialists club with 16+ courses, training over 20,000 people in construction and product repair.">
+                                Plataforma del club de especialistas constructor con más de 16 cursos, formando a más de 20.000 personas en construcción y reparación de productos.
+                            </p>
+                            <div class="project-tags"><span class="tag">LMS</span><span class="tag">Diseño Instruccional</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i class="fas fa-landmark"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">SECOP II — Colombia Compra Eficiente</h3>
+                            <p class="project-description" data-text-es="Desarrollo frontend de la plataforma de formación virtual y dirección del curso SECOP II para la entidad estatal." data-text-en="Frontend development of the virtual training platform and led the SECOP II course for the government agency.">
+                                Desarrollo frontend de la plataforma de formación virtual y dirección del curso SECOP II para la entidad estatal.
+                            </p>
+                            <div class="project-tags"><span class="tag">Frontend</span><span class="tag">Gobierno</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i class="fas fa-universal-access"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">TIC sin Barreras</h3>
+                            <p class="project-description" data-text-es="Diseño instruccional y desarrollo de cursos sobre herramientas informáticas para personas con discapacidad visual, motora, cognitiva y sensorial." data-text-en="Instructional design and course development on computer tools for people with visual, motor, cognitive and sensory disabilities.">
+                                Diseño instruccional y desarrollo de cursos sobre herramientas informáticas para personas con discapacidad visual, motora, cognitiva y sensorial.
+                            </p>
+                            <div class="project-tags"><span class="tag">Accesibilidad</span><span class="tag">Diseño Instruccional</span></div>
+                        </div>
+                    </div>
+
+                    <div class="project-card">
+                        <div class="project-image">
+                            <div class="project-placeholder"><i class="fas fa-lock"></i></div>
+                        </div>
+                        <div class="project-content">
+                            <h3 class="project-title">SGSI — Procuraduría General de la Nación</h3>
+                            <p class="project-description" data-text-es="Plataforma virtual de aprendizaje y dirección del curso de Sistemas de Gestión de Seguridad de la Información para capacitar empleados públicos." data-text-en="Virtual learning platform and led the Information Security Management System course to train public employees.">
+                                Plataforma virtual de aprendizaje y dirección del curso de Sistemas de Gestión de Seguridad de la Información para capacitar empleados públicos.
+                            </p>
+                            <div class="project-tags"><span class="tag">SGSI</span><span class="tag">Moodle</span></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Certifications Section -->
+        <section id="certifications" class="section certifications-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">05</span>
+                    <h2 class="section-title">
+                        <span class="title-bracket">&lt;</span>
+                        <span class="title-text" data-text-es="Certificaciones" data-text-en="Certifications">Certificaciones</span>
+                        <span class="title-bracket">/&gt;</span>
+                    </h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <details class="cert-featured">
+                    <summary>
+                        <i class="fas fa-award cert-featured-icon"></i>
+                        <div class="cert-featured-content">
+                            <div class="cert-featured-title" data-text-es="Programa Oracle Next Education (ONE) — Especialización Backend" data-text-en="Oracle Next Education (ONE) Program — Backend Specialization">Programa Oracle Next Education (ONE) — Especialización Backend</div>
+                            <div class="cert-featured-desc" data-text-es="Alura / Oracle ONE — 7 formaciones técnicas completadas." data-text-en="Alura / Oracle ONE — 7 completed technical tracks.">Alura / Oracle ONE — 7 formaciones técnicas completadas.</div>
+                            <div class="cert-featured-stats">
+                                <span><i class="fas fa-layer-group"></i> 7 <span data-text-es="formaciones" data-text-en="tracks">formaciones</span></span>
+                                <span><i class="fas fa-clock"></i> 308 <span data-text-es="horas" data-text-en="hours">horas</span></span>
+                            </div>
+                        </div>
+                        <span class="cert-featured-link">
+                            <i class="fas fa-file-pdf"></i> <span data-text-es="Ver certificado" data-text-en="View certificate">Ver certificado</span>
+                        </span>
+                    </summary>
+                    <div class="cert-featured-pdf">
+                        <iframe class="cert-pdf-frame" data-src="certificados/Formaci%C3%B3n%20completa%20oracle-one.pdf" title="Programa Oracle Next Education (ONE)" loading="lazy"></iframe>
+                    </div>
+                </details>
+
+                <div class="cert-education">
+                    <i class="fas fa-graduation-cap"></i>
+                    <div>
+                        <div class="cert-education-title" data-text-es="Tecnología en Sistemas de Información" data-text-en="Technology Degree in Information Systems">Tecnología en Sistemas de Información</div>
+                        <div class="cert-education-desc" data-text-es="Fundación Universitaria San José · 2024–2026 (en curso, sexto semestre)" data-text-en="Fundación Universitaria San José · 2024–2026 (in progress, 6th semester)">Fundación Universitaria San José · 2024–2026 (en curso, sexto semestre)</div>
+                    </div>
+                </div>
+
+                <div class="cert-toggle-all">
+                    <button type="button" class="btn btn-secondary cert-toggle-btn" id="certExpandAll">
+                        <i class="fas fa-plus"></i> <span data-text-es="Abrir todas las pestañas" data-text-en="Open all tabs">Abrir todas las pestañas</span>
+                    </button>
+                    <button type="button" class="btn btn-secondary cert-toggle-btn" id="certCollapseAll">
+                        <i class="fas fa-minus"></i> <span data-text-es="Cerrar todas las pestañas" data-text-en="Close all tabs">Cerrar todas las pestañas</span>
+                    </button>
+                </div>
+
+                <!-- Backend, Java y Ecosistema Spring -->
+                <details class="cert-category">
+                    <summary>
+                        <span class="cert-category-name"><i class="fas fa-server"></i> <span data-text-es="Backend, Java y Ecosistema Spring" data-text-en="Backend, Java & Spring Ecosystem">Backend, Java y Ecosistema Spring</span></span>
+                        <i class="fas fa-chevron-down cert-chevron"></i>
+                    </summary>
+                    <div class="cert-category-body">
+                        <details class="cert-platform">
+                            <summary>Platzi</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Curso de Introducción al Desarrollo Backend</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-backend-introduccion.pdf" title="Curso de Introducción al Desarrollo Backend" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Alura — Java</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Java: Creando tu primera aplicación</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Java_%20creando%20tu%20primera%20aplicaci%C3%B3n%20-%20Alura.pdf" title="Java: Creando tu primera aplicación" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Java: Aplicando la Orientación a Objetos</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Java_%20aplicando%20la%20Orientaci%C3%B3n%20a%20Objetos%20-%20Alura.pdf" title="Java: Aplicando la Orientación a Objetos" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Java: Trabajar con listas y colecciones de datos</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Java_%20trabajar%20con%20listas%20y%20colecciones%20de%20datos%20-%20Alura.pdf" title="Java: Trabajar con listas y colecciones de datos" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">Java: Lambdas, streams y Spring Framework</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Java_%20trabajando%20con%20lambdas,%20streams%20y%20Spring%20Framework%20-%20Alura.pdf" title="Java: Lambdas, streams y Spring Framework" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">5.</span> <span class="cert-course-title">Java: Consumir API, archivos y manejo de errores</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Java_%20consumir%20API,%20escribir%20archivos%20y%20manejar%20errores%20-%20Alura.pdf" title="Java: Consumir API, archivos y manejo de errores" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">6.</span> <span class="cert-course-title">Java: Tu primera API conectada al Front End</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Java_%20creando%20tu%20primera%20API%20y%20conect%C3%A1ndola%20al%20Front%20End%20-%20Alura.pdf" title="Java: Tu primera API conectada al Front End" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">7.</span> <span class="cert-course-title">Java: Persistencia con Spring Data JPA</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Java_%20persistencia%20de%20datos%20y%20consultas%20con%20Spring%20Data%20JPA%20-%20Alura.pdf" title="Java: Persistencia con Spring Data JPA" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">8.</span> <span class="cert-course-title">Practicando Java: Condicionales con if/else</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Practicando%20Java_%20condicionales%20con%20if_else%20-%20Alura.pdf" title="Practicando Java: Condicionales con if/else" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Alura — Spring Boot & Framework</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Spring Boot 3: Desarrolla una API REST en Java</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Spring%20Boot%203_%20desarrolla%20una%20API%20REST%20en%20Java%20-%20Alura.pdf" title="Spring Boot 3: Desarrolla una API REST en Java" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Spring Boot 3: Mejores prácticas y seguridad de API</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Spring%20Boot%203_%20aplique%20las%20mejores%20pr%C3%A1cticas%20y%20proteja%20una%20API%20Rest%20-%20Alura.pdf" title="Spring Boot 3: Mejores prácticas y seguridad de API" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Spring Boot 3: Documentar, probar e implementar API</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Spring%20Boot%203_%20documentar,%20probar%20y%20preparar%20una%20API%20para%20su%20implementaci%C3%B3n%20-%20Alura.pdf" title="Spring Boot 3: Documentar, probar e implementar API" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">Spring AI: Integra una aplicación con OpenAI</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Spring%20AI_%20Integra%20una%20aplicaci%C3%B3n%20con%20OpenAI%20-%20Alura.pdf" title="Spring AI: Integra una aplicación con OpenAI" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Alura — <span data-text-es="Proyectos & Challenges" data-text-en="Projects & Challenges">Proyectos & Challenges</span></summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Challenge Foro Hub</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Practicando%20Spring%20Framework_%20Challenge%20Foro%20Hub%20-%20Alura.pdf" title="Challenge Foro Hub" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Challenge Literalura</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Practicando%20Spring%20Boot_%20Challenge%20Literalura%20-%20Alura.pdf" title="Challenge Literalura" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Challenge Conversor de Monedas</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Practicando%20con%20Java_%20Challenge%20Conversor%20de%20Monedas%20-%20Alura.pdf" title="Challenge Conversor de Monedas" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- Ciberseguridad, Seguridad en Desarrollo y Redes -->
+                <details class="cert-category">
+                    <summary>
+                        <span class="cert-category-name"><i class="fas fa-shield-halved"></i> <span data-text-es="Ciberseguridad, Seguridad en Desarrollo y Redes" data-text-en="Cybersecurity, Secure Development & Networking">Ciberseguridad, Seguridad en Desarrollo y Redes</span></span>
+                        <i class="fas fa-chevron-down cert-chevron"></i>
+                    </summary>
+                    <div class="cert-category-body">
+                        <details class="cert-platform">
+                            <summary>Backtrack Academy</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Inteligencia de Amenazas Cibernéticas</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/inteligencia%20amenazas%20ciberneticas.pdf" title="Inteligencia de Amenazas Cibernéticas" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Introducción al Desarrollo Seguro</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/desarrollo%20seguro.pdf" title="Introducción al Desarrollo Seguro" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Introducción a la Seguridad en Redes</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/introduccion%20a%20seguridad%20en%20redes.pdf" title="Introducción a la Seguridad en Redes" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">Ciberseguridad Personal</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/ciberseguridad-persona.pdf" title="Ciberseguridad Personal" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Alura</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Redes: Introducción, Conceptos y Práctica</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Redes_%20Introducci%C3%B3n,%20Conceptos%20y%20Pr%C3%A1ctica%20-%20Alura.pdf" title="Redes: Introducción, Conceptos y Práctica" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- Bases de Datos y Gestión SQL -->
+                <details class="cert-category">
+                    <summary>
+                        <span class="cert-category-name"><i class="fas fa-database"></i> <span data-text-es="Bases de Datos y Gestión SQL" data-text-en="Databases & SQL Management">Bases de Datos y Gestión SQL</span></span>
+                        <i class="fas fa-chevron-down cert-chevron"></i>
+                    </summary>
+                    <div class="cert-category-body">
+                        <details class="cert-platform">
+                            <summary>Alura</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Administración de MySQL: Seguridad y optimización (Parte 1)</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Administraci%C3%B3n%20de%20MySQL_%20Seguridad%20y%20optimizaci%C3%B3n%20de%20la%20base%20de%20datos%20-%20Parte%201%20-%20Alura.pdf" title="Administración de MySQL: Seguridad y optimización (Parte 1)" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Introducción a SQL con MySQL</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Introducci%C3%B3n%20a%20SQL%20con%20MySQL_%20Manipule%20y%20consulte%20datos%20-%20Alura.pdf" title="Introducción a SQL con MySQL" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Consultas SQL: Avanzando en SQL con MySQL</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Consultas%20SQL_%20Avanzando%20en%20SQL%20con%20MySQL%20-%20Alura.pdf" title="Consultas SQL: Avanzando en SQL con MySQL" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">Comandos DML: Manipulación de datos con MySQL</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Comandos%20DML_%20Manipulaci%C3%B3n%20de%20datos%20con%20MySQL%20-%20Alura.pdf" title="Comandos DML: Manipulación de datos con MySQL" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">5.</span> <span class="cert-course-title">Procedures SQL: Ejecutando código en MySQL</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Procedures%20SQL_%20Ejecutando%20c%C3%B3digo%20en%20MySQL%20-%20Alura.pdf" title="Procedures SQL: Ejecutando código en MySQL" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- DevOps, Sistemas Operativos y Herramientas -->
+                <details class="cert-category">
+                    <summary>
+                        <span class="cert-category-name"><i class="fas fa-terminal"></i> <span data-text-es="DevOps, Sistemas Operativos y Herramientas" data-text-en="DevOps, Operating Systems & Tools">DevOps, Sistemas Operativos y Herramientas</span></span>
+                        <i class="fas fa-chevron-down cert-chevron"></i>
+                    </summary>
+                    <div class="cert-category-body">
+                        <details class="cert-platform">
+                            <summary>Platzi</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Curso de Docker: Fundamentos</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-docker-fundamentos.pdf" title="Curso de Docker: Fundamentos" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Curso de Introducción a la Terminal y Línea de Comandos</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-terminal-21.pdf" title="Curso de Introducción a la Terminal y Línea de Comandos" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Curso Profesional de Git y GitHub</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-git-github.pdf" title="Curso Profesional de Git y GitHub" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">Curso de Fundamentos de Ingeniería de Software</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-%20fundamentos%20en%20ingenieria.pdf" title="Curso de Fundamentos de Ingeniería de Software" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Backtrack Academy</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Iniciando en GNU/Linux</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/gnu-linux.pdf" title="Iniciando en GNU/Linux" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Alura</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Git y GitHub: Repositorio, commit y versiones</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Git%20y%20GitHub_%20repositorio,%20commit%20y%20versiones%20-%20Alura.pdf" title="Git y GitHub: Repositorio, commit y versiones" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- Python, Análisis de Datos y BI -->
+                <details class="cert-category">
+                    <summary>
+                        <span class="cert-category-name"><i class="fab fa-python"></i> <span data-text-es="Python, Análisis de Datos y Business Intelligence" data-text-en="Python, Data Analysis & Business Intelligence">Python, Análisis de Datos y Business Intelligence</span></span>
+                        <i class="fas fa-chevron-down cert-chevron"></i>
+                    </summary>
+                    <div class="cert-category-body">
+                        <details class="cert-platform">
+                            <summary>Platzi</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Pensamiento Computacional con Python</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-python-cs.pdf" title="Pensamiento Computacional con Python" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Fundamentos de Python</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-python-fundamentos.pdf" title="Fundamentos de Python" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Python Intermedio: Comprehensions, Lambdas y Errores</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-python-intermedio.pdf" title="Python Intermedio: Comprehensions, Lambdas y Errores" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">Análisis de Negocios para Ciencia de Datos</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-negocios-data-science-2020.pdf" title="Análisis de Negocios para Ciencia de Datos" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">5.</span> <span class="cert-course-title">Introducción a Excel: Fundamentos y Formato</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-excel-intro-2022.pdf" title="Introducción a Excel: Fundamentos y Formato" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Microsoft Learn</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Creación y uso de informes de análisis con Power BI</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Creacion_y_uso_de_informes_de_analisis_con_Power_BI.pdf" title="Creación y uso de informes de análisis con Power BI" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Distribución de información de Power BI</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Distribucion_de_informacion_de_Power_BI.pdf" title="Distribución de información de Power BI" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Introducción al análisis de datos de Microsoft</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Introduccion_al_analisis_de_datos_de_Microsoft.pdf" title="Introducción al análisis de datos de Microsoft" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- Frontend y Lógica de Programación -->
+                <details class="cert-category">
+                    <summary>
+                        <span class="cert-category-name"><i class="fas fa-palette"></i> <span data-text-es="Desarrollo Frontend y Lógica de Programación" data-text-en="Frontend Development & Programming Logic">Desarrollo Frontend y Lógica de Programación</span></span>
+                        <i class="fas fa-chevron-down cert-chevron"></i>
+                    </summary>
+                    <div class="cert-category-body">
+                        <details class="cert-platform">
+                            <summary>Alura — HTML y CSS</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Ambientes de desarrollo, estructura de archivos y tags</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20HTML%20y%20CSS_%20ambientes%20de%20desarrollo,%20estructura%20de%20archivos%20y%20tags%20-%20Alura.pdf" title="Ambientes de desarrollo, estructura de archivos y tags" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Header, footer y variables CSS</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20HTML%20y%20CSS_%20header,%20footer%20y%20variables%20CSS%20-%20Alura.pdf" title="Header, footer y variables CSS" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Clases, Posicionamiento y Flexbox</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20HTML%20y%20CSS_%20Clases,%20Posicionamiento%20y%20Flexbox%20-%20Alura.pdf" title="Clases, Posicionamiento y Flexbox" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">Responsividad y publicación de proyectos</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20HTML%20y%20CSS_%20trabajando%20con%20responsividad%20y%20publicaci%C3%B3n%20de%20proyectos%20-%20Alura.pdf" title="Responsividad y publicación de proyectos" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Alura — <span data-text-es="Lógica y Fundamentos" data-text-en="Logic & Fundamentals">Lógica y Fundamentos</span></summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Lógica de programación con JavaScript</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20L%C3%B3gica%20de%20programaci%C3%B3n_%20sum%C3%A9rgete%20en%20la%20programaci%C3%B3n%20con%20JavaScript%20-%20Alura.pdf" title="Lógica de programación con JavaScript" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Lógica de programación: Funciones y listas</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20L%C3%B3gica%20de%20programaci%C3%B3n_%20explorar%20funciones%20y%20listas%20-%20Alura.pdf" title="Lógica de programación: Funciones y listas" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Challenge Amigo Secreto</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Practicando%20L%C3%B3gica%20de%20Programaci%C3%B3n_%20Challenge%20Amigo%20secreto%20-%20Alura.pdf" title="Challenge Amigo Secreto" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Platzi — <span data-text-es="Diseño y Web3" data-text-en="Design & Web3">Diseño y Web3</span></summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Curso de Diseño para Programadores</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-diseno-programadores.pdf" title="Curso de Diseño para Programadores" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Audiocurso de Fundamentos de Web3</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-fundamentos-web3.pdf" title="Audiocurso de Fundamentos de Web3" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- IA y Automatización -->
+                <details class="cert-category">
+                    <summary>
+                        <span class="cert-category-name"><i class="fas fa-robot"></i> <span data-text-es="Inteligencia Artificial y Automatización" data-text-en="Artificial Intelligence & Automation">Inteligencia Artificial y Automatización</span></span>
+                        <i class="fas fa-chevron-down cert-chevron"></i>
+                    </summary>
+                    <div class="cert-category-body">
+                        <details class="cert-platform">
+                            <summary>Alura</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Ingeniería de Prompt para IA generativa</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Ingenier%C3%ADa%20de%20Prompt_%20creando%20prompts%20eficaces%20para%20la%20IA%20generativa%20-%20Alura.pdf" title="Ingeniería de Prompt para IA generativa" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">ChatGPT y programación: Aumenta tu productividad</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20ChatGPT%20y%20programaci%C3%B3n_%20aumenta%20tu%20productividad%20-%20Alura.pdf" title="ChatGPT y programación: Aumenta tu productividad" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">ChatGPT: Optimizando la calidad de los resultados</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20ChatGPT_%20optimizando%20la%20calidad%20de%20los%20resultados%20-%20Alura.pdf" title="ChatGPT: Optimizando la calidad de los resultados" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">IA: Explorando el potencial de la IA Generativa</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20IA_%20explorando%20el%20potencial%20de%20la%20Inteligencia%20Artificial%20Generativa%20-%20Alura.pdf" title="IA: Explorando el potencial de la IA Generativa" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Platzi</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Taller de Creación de Contenido con IA</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-contenido-ia-2023.pdf" title="Taller de Creación de Contenido con IA" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Automatizaciones Low-Code con N8N</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-n8n-lowcode.pdf" title="Automatizaciones Low-Code con N8N" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+                <!-- Metodologías Ágiles y Desarrollo Profesional -->
+                <details class="cert-category">
+                    <summary>
+                        <span class="cert-category-name"><i class="fas fa-people-arrows"></i> <span data-text-es="Metodologías Ágiles y Desarrollo Profesional" data-text-en="Agile Methodologies & Professional Development">Metodologías Ágiles y Desarrollo Profesional</span></span>
+                        <i class="fas fa-chevron-down cert-chevron"></i>
+                    </summary>
+                    <div class="cert-category-body">
+                        <details class="cert-platform">
+                            <summary>Alura</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Fundamentos de Agilidad</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Fundamentos%20de%20Agilidad_%20Primeros%20pasos%20para%20la%20transformaci%C3%B3n%20%C3%A1gil%20-%20Alura.pdf" title="Fundamentos de Agilidad" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">2.</span> <span class="cert-course-title">Aprender a aprender: Técnicas para tu autodesarrollo</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Aprender%20a%20aprender-tecnicas%20para%20tu%20autodesarrollo.pdf" title="Aprender a aprender: Técnicas para tu autodesarrollo" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">3.</span> <span class="cert-course-title">Foco: Enfocarse trae más resultados</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Foco_%20Enfocarse%20trae%20m%C3%A1s%20resultados%20para%20el%20d%C3%ADa%20a%20d%C3%ADa%20-%20Alura.pdf" title="Foco: Enfocarse trae más resultados" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">4.</span> <span class="cert-course-title">Hábitos: Ser productivo para cumplir tus metas</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20H%C3%A1bitos_%20Ser%20productivo%20para%20cumplir%20sus%20metas%20personales%20-%20Alura.pdf" title="Hábitos: Ser productivo para cumplir tus metas" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">5.</span> <span class="cert-course-title">LinkedIn: Cómo hacer que tu perfil trabaje por ti</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20LinkedIn_%20Como%20hacer%20que%20tu%20perfil%20trabaje%20por%20ti%20-%20Alura.pdf" title="LinkedIn: Cómo hacer que tu perfil trabaje por ti" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">6.</span> <span class="cert-course-title">Propósito profesional</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Prop%C3%B3sito%20profesional_%20ser%20el%20protagonista%20de%20tu%20carrera%20-%20Alura.pdf" title="Propósito profesional" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">7.</span> <span class="cert-course-title">Desarrollo de carrera: Demanda del mercado</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Desarrollo%20de%20carrera_%20demanda%20del%20mercado%20-%20Alura.pdf" title="Desarrollo de carrera: Demanda del mercado" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">8.</span> <span class="cert-course-title">Transición de carrera: Guía al campo de tecnología</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Transici%C3%B3n%20de%20carrera_%20una%20gu%C3%ADa%20al%20campo%20de%20tecnolog%C3%ADa%20-%20Alura.pdf" title="Transición de carrera: Guía al campo de tecnología" loading="lazy"></iframe></div>
+                                </details>
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">9.</span> <span class="cert-course-title">Emprendimiento: De la idea al plan de negocios</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/Curso%20Emprendimiento_%20De%20la%20idea%20al%20plan%20de%20negocios%20-%20Alura.pdf" title="Emprendimiento: De la idea al plan de negocios" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                        <details class="cert-platform">
+                            <summary>Platzi</summary>
+                            <div class="cert-course-list">
+                                <details class="cert-course">
+                                    <summary><i class="fas fa-file-pdf"></i> <span class="cert-num">1.</span> <span class="cert-course-title">Strategies to Learn English Online</span> <i class="fas fa-chevron-down cert-course-chevron"></i></summary>
+                                    <div class="cert-course-body"><iframe class="cert-pdf-frame" data-src="certificados/diploma-estrategias-ingles-2022.pdf" title="Strategies to Learn English Online" loading="lazy"></iframe></div>
+                                </details>
+                            </div>
+                        </details>
+                    </div>
+                </details>
+
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="section contact-section">
+            <div class="section-container">
+                <div class="section-header">
+                    <span class="section-number">06</span>
+                    <h2 class="section-title">
+                        <span class="title-bracket">&lt;</span>
+                        <span class="title-text" data-text-es="Contacto" data-text-en="Contact">Contacto</span>
+                        <span class="title-bracket">/&gt;</span>
+                    </h2>
+                    <div class="section-line"></div>
+                </div>
+
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-envelope"></i></div>
+                            <div class="contact-details">
+                                <h4 class="contact-label" data-text-es="Email" data-text-en="Email">Email</h4>
+                                <a href="mailto:sergioparedesv@gmail.com" class="contact-value">sergioparedesv@gmail.com</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-whatsapp"></i></div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">WhatsApp</h4>
+                                <a href="https://wa.me/573184310252" target="_blank" rel="noopener noreferrer" class="contact-value">+57 318 431 0252</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fas fa-map-marker-alt"></i></div>
+                            <div class="contact-details">
+                                <h4 class="contact-label" data-text-es="Ubicación" data-text-en="Location">Ubicación</h4>
+                                <span class="contact-value" data-text-es="Girón, Santander, Colombia" data-text-en="Girón, Santander, Colombia">Girón, Santander, Colombia</span>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-linkedin-in"></i></div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">LinkedIn</h4>
+                                <a href="https://www.linkedin.com/in/sergio-paredes-444534129/" target="_blank" rel="noopener noreferrer" class="contact-value">/in/sergio-paredes</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-github"></i></div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">GitHub</h4>
+                                <a href="https://github.com/sergioparedesv/" target="_blank" rel="noopener noreferrer" class="contact-value">@sergioparedesv</a>
+                            </div>
+                        </div>
+
+                        <div class="contact-item">
+                            <div class="contact-icon"><i class="fab fa-youtube"></i></div>
+                            <div class="contact-details">
+                                <h4 class="contact-label">YouTube</h4>
+                                <a href="https://www.youtube.com/channel/UCo0bIjLfBJSlatvTqJkiZEQ" target="_blank" rel="noopener noreferrer" class="contact-value" data-text-es="Mi canal" data-text-en="My channel">Mi canal</a>
+                            </div>
+                        </div>
+                    </div>
+
+                    <form class="contact-form" id="contactForm">
+                        <div class="form-group">
+                            <input type="text" name="name" class="form-input" placeholder="Nombre" data-placeholder-es="Nombre" data-placeholder-en="Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" name="email" class="form-input" placeholder="Email" data-placeholder-es="Email" data-placeholder-en="Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="text" name="subject" class="form-input" placeholder="Asunto" data-placeholder-es="Asunto" data-placeholder-en="Subject" required>
+                        </div>
+                        <div class="form-group">
+                            <textarea name="message" class="form-input form-textarea" rows="5" placeholder="Mensaje" data-placeholder-es="Mensaje" data-placeholder-en="Message" required></textarea>
+                        </div>
+                        <button type="submit" class="btn btn-primary btn-submit">
+                            <span data-text-es="Enviar Mensaje" data-text-en="Send Message">Enviar Mensaje</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </button>
+                    </form>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="main-footer">
+        <div class="footer-container">
+            <div class="footer-content">
+                <div class="footer-text-wrapper">
+                    <p class="footer-text">
+                        <span class="footer-copyright">© 2026 Sergio Paredes</span>
+                        <span class="footer-divider">•</span>
+                        <span class="footer-built" data-text-es="Hecho con pasión y código" data-text-en="Built with passion and code">Hecho con pasión y código</span>
+                    </p>
+                </div>
+                <div class="footer-social">
+                    <a href="https://github.com/sergioparedesv/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="GitHub">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/sergio-paredes-444534129/" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="LinkedIn">
+                        <i class="fab fa-linkedin-in"></i>
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCo0bIjLfBJSlatvTqJkiZEQ" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="YouTube">
+                        <i class="fab fa-youtube"></i>
+                    </a>
+                    <a href="https://wa.me/573184310252" target="_blank" rel="noopener noreferrer" class="footer-social-link" title="WhatsApp">
+                        <i class="fab fa-whatsapp"></i>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scripts -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.2.1/anime.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
