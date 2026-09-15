@@ -1230,6 +1230,23 @@ img {
     gap: 0.5rem;
 }
 
+.project-visit-link {
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    margin-top: 1.5rem;
+    color: var(--primary);
+    font-weight: 700;
+    font-size: 0.9rem;
+    text-decoration: none;
+    transition: gap var(--transition-fast), color var(--transition-fast);
+}
+
+.project-visit-link:hover {
+    color: var(--cyan);
+    gap: 0.8rem;
+}
+
 .contact-content {
     display: grid;
     grid-template-columns: 1fr 1.5fr;

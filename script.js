@@ -255,22 +255,41 @@ function initFormHandlers() {
     }
 }
 
-function handleFormSubmit(e) {
+async function handleFormSubmit(e) {
     e.preventDefault();
-    const formData = new FormData(e.target);
-    const data = Object.fromEntries(formData);
+    const form = e.target;
+    const formData = new FormData(form);
+    const submitBtn = form.querySelector('.btn-submit');
+    const submitLabel = submitBtn ? submitBtn.querySelector('span') : null;
+    const originalLabel = submitLabel ? submitLabel.textContent : '';
 
-    const subject = `Portafolio - ${data.subject || 'Contacto'} (${data.name || ''})`;
-    const body = `${data.message || ''}\n\n—\n${data.name || ''}\n${data.email || ''}`;
-    const mailto = `mailto:sergioparedesv@gmail.com?subject=${encodeURIComponent(subject)}&body=${encodeURIComponent(body)}`;
+    if (submitBtn) submitBtn.disabled = true;
+    if (submitLabel) submitLabel.textContent = AppState.currentLang === 'es' ? 'Enviando...' : 'Sending...';
 
-    const message = AppState.currentLang === 'es'
-        ? 'Abriendo tu cliente de correo para enviar el mensaje...'
-        : 'Opening your email client to send the message...';
+    try {
+        const response = await fetch('https://api.web3forms.com/submit', {
+            method: 'POST',
+            headers: { Accept: 'application/json' },
+            body: formData
+        });
+        const result = await response.json();
 
-    window.location.href = mailto;
-    alert(message);
-    e.target.reset();
+        if (result.success) {
+            alert(AppState.currentLang === 'es'
+                ? '¡Mensaje enviado! Te responderé pronto.'
+                : 'Message sent! I will get back to you soon.');
+            form.reset();
+        } else {
+            throw new Error(result.message || 'Web3Forms error');
+        }
+    } catch (err) {
+        alert(AppState.currentLang === 'es'
+            ? 'No se pudo enviar el mensaje. Por favor escríbeme por WhatsApp o al correo directamente.'
+            : 'Could not send the message. Please reach out via WhatsApp or email directly.');
+    } finally {
+        if (submitBtn) submitBtn.disabled = false;
+        if (submitLabel) submitLabel.textContent = originalLabel;
+    }
 }
 
 function initMobileMenu() {
