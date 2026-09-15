@@ -267,10 +267,14 @@ async function handleFormSubmit(e) {
     if (submitLabel) submitLabel.textContent = AppState.currentLang === 'es' ? 'Enviando...' : 'Sending...';
 
     try {
+        const payload = Object.fromEntries(formData);
         const response = await fetch('https://api.web3forms.com/submit', {
             method: 'POST',
-            headers: { Accept: 'application/json' },
-            body: formData
+            headers: {
+                'Content-Type': 'application/json',
+                Accept: 'application/json'
+            },
+            body: JSON.stringify(payload)
         });
         const result = await response.json();
 
@@ -283,6 +287,7 @@ async function handleFormSubmit(e) {
             throw new Error(result.message || 'Web3Forms error');
         }
     } catch (err) {
+        console.error('Contact form submission failed:', err);
         alert(AppState.currentLang === 'es'
             ? 'No se pudo enviar el mensaje. Por favor escríbeme por WhatsApp o al correo directamente.'
             : 'Could not send the message. Please reach out via WhatsApp or email directly.');
